@@ -1,0 +1,13 @@
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile.dev
+    ports:
+      - "3000:3000"
+    volumes:
+      - .:/src
+      - /src/node_modules 
+    environment:
+      - WATCHPACK_POLLING=true
+    command: pnpm run dev
