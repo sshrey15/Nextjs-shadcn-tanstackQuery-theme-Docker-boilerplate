@@ -18,5 +18,7 @@
     "lib": "@/lib",
     "hooks": "@/hooks"
   },
-  "registries": {}
+  "registries": {
+    "@shadcnuikit": "https://shadcnuikit.com/r/{name}.json"
+  }
 }
